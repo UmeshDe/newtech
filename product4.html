@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+    <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/cform.js"></script>
+    <script>
+        $(document).ready(function() {
+            /////// icons
+            $(".social li").find("a").css({opacity:0.6});
+            $(".social li a").hover(function() {
+                $(this).stop().animate({opacity:1 }, 400, 'easeOutExpo');
+            },function(){
+                $(this).stop().animate({opacity:0.6 }, 400, 'easeOutExpo' );
+            });
+
+            // camera
+            $('#camera_wrap').camera({
+                //thumbnails: true
+                autoAdvance			: true,
+                mobileAutoAdvance	: true,
+                height: '37%',
+                hover: false,
+                loader: 'none',
+                navigation: false,
+                navigationHover: false,
+                mobileNavHover: false,
+                playPause: false,
+                pauseOnClick: false,
+                pagination			: true,
+                time: 7000,
+                transPeriod: 1000,
+                minHeight: '300px'
+            });
+
+
+
+        });
+        // $(window).load(function() {
+        //     var $container = $('#isotope-items'),
+        //         $optionSet = $('#isotope-options'),
+        //         $optionSets = $('#isotope-filters'),
+        //         $optionLinks = $optionSets.find('a');
+        //     $container.isotope({
+        //         filter: '*',
+        //         layoutMode: 'fitRows'
+        //     });
+        //     $optionLinks.click(function(){
+        //         var $this = $(this);
+        //         // don't proceed if already selected
+        //         if ( $this.hasClass('selected') ) {
+        //             return false;
+        //         }
+        //         $optionSet.find('.selected').removeClass('selected');
+        //         $this.addClass('selected');
+        //
+        //         var selector = $(this).attr('data-filter');
+        //         $container.isotope({
+        //             filter: selector
+        //         });
+        //         return false;
+        //     });
+        $(window).on("resize", function( event ) {
+            $container.isotope('reLayout');
+        });
+
+        // touchTouch
+        $('.thumb-isotope .thumbnail a').touchTouch();
+
+        });
+    </script>
+
+    <!--[if lt IE 8]>
+    <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <![endif]-->
+</head>
+
+<body class="subpage">
+<div id="main">
+    <header>
+        <div class="logo_wrapper"><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></div>
+        <div class="top1">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="top1_inner clearfix">
+                            <div class="phone1">Need Help? Call us: <span>7045655095</span></div>
+                            <div class="phone2 clearfix">
+                                <div class="txt1">Follow us:</div>
+                                <div class="social_wrapper">
+                                    <ul class="social clearfix">
+                                        <li><a href="#"><img src="images/social_ic1.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic2.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic3.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="top2_inner">
+                            <div class="navbar navbar_">
+                                <div class="navbar-inner navbar-inner_">
+                                    <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </a>
+                                    <div class="nav-collapse nav-collapse_ collapse">
+                                        <ul class="nav sf-menu clearfix">
+                                            <li><a href="index.html">Home</a></li>
+                                            <!--<li><a href="company.html">Company </a></li>				-->
+                                            <li class="sub-menu sub-menu-1 active"><a href="javascript:;">Products<em></em></a>
+                                                <ul>
+                                                    <li class="active"><a href="machine_products.html">Filteration & purification</a></li>
+                                                    <li><a href="agro_products.html">Agro Products</a></li>
+                                                    <li><a href="leather_cloth.html">Leather & Clothing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li ><a href="company.html">Company </a></li>
+                                            <li><a href="contact_us.html">Contacts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="slider" class="clearfix">
+        <div id="camera_wrap">
+            <!--<div data-src="images/slide1.jpg"></div>-->
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="content2">
+
+            <div class="page_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            Filteration & Purification
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inner">
+                <div id="inner2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span9">
+
+                                <h1>Compressed Air Filtration and Purification
+
+                                </h1>
+
+                                <div class="thumb3">
+                                    <div class="thumbnail clearfix">
+                                        <figure class="img-polaroid"><img src="images/aa17.png" alt=""></figure>
+                                        <!--<div class="caption">-->
+                                        <!--<h4>-->
+                                        <!--Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit.-->
+                                        <!--</h4>-->
+                                        <!--<p>-->
+                                        <!--amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetuer adipiscing elit. Nunc suscipit. Suspendisse enim arcu, convallis non, cursus sed, dignissim et, est. Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. Vestibulum pede.-->
+                                        <!--</p>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+
+                                <div class="line1"></div>
+
+                                <h2>Description</h2>
+
+                                <div class="row">
+                                    <div style=" width:100%; float:left; margin-right:20px; ">
+                                        <div class="span8">
+
+                                            <p class="ptext" style="text-align:justify;">Every Cubic foot of ambient air contains millions of particles of dirt,dust,moisture vapor and hydrocarbons.
+                                                Inlet filters protects your compressors from the larger bits,but the majority of these contaminants pass through the compressor and affect compressedair introduces compressor fluid and other contaminants into the air stream.
+                                                To protect your expensive tools and production machinery and increase product quality,you need to remove condensed liquids,solid,particles,hydrocarbon aerosols,vapors etc.Mechmann's Coalescer filters are the best.
+                                            </p><br />
+
+
+                                            <h5 class="home"> Water Separators </h5>
+                                            <ul class="listingsss">
+                                                <li>Protects downstream filters from bulk liquid contamination.</li>
+                                                <li>Help to meet air quality requirements ISO 8573 1,ISO 12500-1.</li>
+                                                <li>90-92% removal efficiencies.</li>
+                                                <li>Low Pressure Drop,Energy efficient.</li>
+                                                <li>Housing Material : Aluminum Die Cast/Carbon Steel.</li>
+                                                <li>Element Material :Borosilicate Glass Micro Fiber/Mesh Pads.</li>
+                                                <li>Capacities : Up to 15000 CFM.</li>
+                                                <li>Working pressures :Up to 5000 PSI.</li>
+                                                <li>Working temperatures : Up to 65°C.</li>
+                                            </ul>
+                                        </br>
+                                            <h5 class="home">Coalescing Compressed Air Filters</h5>
+                                            <ul class="listingsss">
+                                                <li>Meets air quality requirements ISO 8573-1,ISO 12500-1.</li>
+                                                <li>Removes Atmospheric Dirt,Soild Perticles rust and pipe scale.</li>
+                                                <li>Removes aerosols liquid oil and oil aerosols.</li>
+                                                <li>Removes Micro Organisms</li>
+                                                <li>Housing Material :Aluminum Die Cast/Carbon steel.</li>
+                                                <li>Element Material :Special Treated Borosilicate Glass Micro Fiber.</li>
+                                                <li>Capacities :Up to 15000 CFM</li>
+                                                <li>Working Pressures :up to 5000 PSI</li>
+                                                <li>Working temprature : up to 65°C.</li>
+                                                <li>Microns Rating 5,1,0.1 and 0.01 micron</li>
+                                            </ul>
+                                            <h5 class="home">Adsorption(Actvated Carbon) Filters</h5>
+                                            <ul class="listingsss">
+                                                <li>Made as per quality requirements of ISO 8573-5.</li>
+                                                <li>Removes oil in gaseous from down to 0.003ppm.</li>
+                                                <li>Removes submicronic particles down to 0.03 micron.</li>
+                                                <li>capacities : up to 15000 CFM.</li>
+                                                <li>Housing Material :Aluminum Die cast/carbon steel.</li>
+                                                <li>Element Material :Activated Carbon Media With.</li>
+                                                <li>Working Pressures : Up to 5000 PSI</li>
+                                                <li>Working temprature : up to 65°C.</li>
+
+                                            </ul>
+                                            <h5 class="innerheadings1">Replacement Filter Cartridge</h5>
+                                            <ul class="listingsss">
+                                                <li>Ultra Filter,Dominick Hunter,Parker,Zander,Donaldson,Atlascopco And Many.</li>
+
+
+                                            </ul>
+                                            <h5 class="home">Sterile Air Filters</h5>
+                                            <ul class="listingsss">
+                                                <li>Absoult removal of dirt Particles(>99.999%).</li>
+                                                <li>Removes Micro Organisms also</li>
+                                                <li>Makes Air quality : Sterile Grade</li>
+                                                <li>Housing Material : Stainless Steel</li>
+                                                <li>Element Material : PES,PTEF,PP</li>
+                                                <li>In-situ steam sterilization can be done</li>
+                                                <li>Capacities : Up to 5000 CFM</li>
+                                                <li>Working Pressure :Up to 1000 PSI</li>
+                                                <li>Working Tempratures : up to 65°C</li>
+                                            </ul>
+                                            <h5 class="innerheadings1">Compressed Air Dryers</h5>
+                                            <p class="ptext" style="text-align:justify;">Compress air contains water vapor.As this air travels through compressed air piping it cools and the vapor condenses into liquid consensate.
+                                                this condensate increases maintenance requirements and affects product quality.Mechmann offers a wide range of effcient compressed air dryers.
+                                                Select the dryer that best meets the specific application requirements by evaluating air quality,pressure dew point and delivery volume.
+                                            </p>
+                                            <h5 class="home">Desiccant Air Dryers</h5>
+                                            <ul class="listingsss">
+                                                <li>Water vapor removal > 99.9%.</li>
+                                                <li>Pressure Due points : -40 to -70 °C.</li>
+                                                <li>High quality dessicant,longer life.</li>
+                                                <li>ASME designed pressure vessels</li>
+                                                <li>Capacities :up to 10000 CFM</li>
+                                                <li>working pressure : Up to 300 PSI</li>
+                                                <li>Working Tempratures : Up to  65°C.</li>
+                                                <li>Working Tempratures : up to 50°C.</li>
+                                            </ul>
+                                            <h5 class="home">Refrigerated Air Dryers</h5>
+                                            <ul class="listingsss">
+                                                <li>Water vapor removal > 90%.</li>
+                                                <li>Pressure Due points : 2-10 °C.</li>
+                                                <li>Refrigerant : R-134a,R407C.R-22.</li>
+                                                <li>Air cooled and water cooled options</li>
+                                                <li>Capacities :up to 10000 CFM</li>
+                                                <li>working pressure : Up to 300 PSI</li>
+                                                <li>Working Tempratures : Up to  65°C.</li>
+                                                <li>Ambient Tempratures : up to 50°C.</li>
+                                            </ul></br>
+                                            <h5 class="home">No Loss Type Automatic Drains</h5>
+                                            <p class="ptext">Condensate is always present in a compresses air system.If condensate is not removed from a compressed air system,it will adversely affect product quality and production effciency and will eventually lead to costly downtime.</p>
+                                            <ul class="listingsss">
+                                                <li>Zero air loss,Large savings.</li>
+                                                <li>No need of electrical wiring.</li>
+                                                <li>Manual discharge Drain is provided.</li>
+                                                <li>Operational Check is also provided.</li>
+
+                                            </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="bot clearfix">
+                            <div class="bot1">
+                                <div class="menu_bot">
+                                    <ul id="menu_bot" class="clearfix">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <!--<li><a href="company.html">Company </a></li>				-->
+                                        <li class="sub-menu sub-menu-1"><a href="javascript:;">Products<em></em></a>
+                                            <ul>
+                                                <li><a href="machine_products.html">Filteration & purification</a></li>
+                                                <li><a href="agro_products.html">Agro Products</a></li>
+                                                <li><a href="leather_cloth.html">Leather & Clothing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="company.html">Company </a></li>
+                                        <li><a href="contact_us.html">Contacts</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bot2 clearfix">
+
+                            </div>
+                        </div>
+                        <div class="copyright">Copyright © <script type="text/javascript">document.write(new Date().getFullYear())</script>. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

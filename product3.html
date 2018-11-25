@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+    <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/cform.js"></script>
+    <script>
+        $(document).ready(function() {
+            /////// icons
+            $(".social li").find("a").css({opacity:0.6});
+            $(".social li a").hover(function() {
+                $(this).stop().animate({opacity:1 }, 400, 'easeOutExpo');
+            },function(){
+                $(this).stop().animate({opacity:0.6 }, 400, 'easeOutExpo' );
+            });
+
+            // camera
+            $('#camera_wrap').camera({
+                //thumbnails: true
+                autoAdvance			: true,
+                mobileAutoAdvance	: true,
+                height: '37%',
+                hover: false,
+                loader: 'none',
+                navigation: false,
+                navigationHover: false,
+                mobileNavHover: false,
+                playPause: false,
+                pauseOnClick: false,
+                pagination			: true,
+                time: 7000,
+                transPeriod: 1000,
+                minHeight: '300px'
+            });
+
+
+
+        });
+        // $(window).load(function() {
+        //     var $container = $('#isotope-items'),
+        //         $optionSet = $('#isotope-options'),
+        //         $optionSets = $('#isotope-filters'),
+        //         $optionLinks = $optionSets.find('a');
+        //     $container.isotope({
+        //         filter: '*',
+        //         layoutMode: 'fitRows'
+        //     });
+        //     $optionLinks.click(function(){
+        //         var $this = $(this);
+        //         // don't proceed if already selected
+        //         if ( $this.hasClass('selected') ) {
+        //             return false;
+        //         }
+        //         $optionSet.find('.selected').removeClass('selected');
+        //         $this.addClass('selected');
+        //
+        //         var selector = $(this).attr('data-filter');
+        //         $container.isotope({
+        //             filter: selector
+        //         });
+        //         return false;
+        //     });
+        $(window).on("resize", function( event ) {
+            $container.isotope('reLayout');
+        });
+
+        // touchTouch
+        $('.thumb-isotope .thumbnail a').touchTouch();
+
+        });
+    </script>
+
+    <!--[if lt IE 8]>
+    <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <![endif]-->
+</head>
+
+<body class="subpage">
+<div id="main">
+    <header>
+        <div class="logo_wrapper"><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></div>
+        <div class="top1">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="top1_inner clearfix">
+                            <div class="phone1">Need Help? Call us: <span>7045655095</span></div>
+                            <div class="phone2 clearfix">
+                                <div class="txt1">Follow us:</div>
+                                <div class="social_wrapper">
+                                    <ul class="social clearfix">
+                                        <li><a href="#"><img src="images/social_ic1.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic2.png"></a></li>
+                                        <li><a href="#"><img src="images/social_ic3.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="top2_inner">
+                            <div class="navbar navbar_">
+                                <div class="navbar-inner navbar-inner_">
+                                    <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </a>
+                                    <div class="nav-collapse nav-collapse_ collapse">
+                                        <ul class="nav sf-menu clearfix">
+                                            <li><a href="index.html">Home</a></li>
+                                            <!--<li><a href="company.html">Company </a></li>				-->
+                                            <li class="sub-menu sub-menu-1 active"><a href="javascript:;">Products<em></em></a>
+                                                <ul>
+                                                    <li class="active"><a href="machine_products.html">Filteration & purification</a></li>
+                                                    <li><a href="agro_products.html">Agro Products</a></li>
+                                                    <li><a href="leather_cloth.html">Leather & Clothing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li ><a href="company.html">Company </a></li>
+                                            <li><a href="contact_us.html">Contacts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="slider" class="clearfix">
+        <div id="camera_wrap">
+            <!--<div data-src="images/slide1.jpg"></div>-->
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="content2">
+
+            <div class="page_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            Filteration & Purification
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inner">
+                <div id="inner2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span9">
+
+                                <h1>Self Cleaning Filter
+                                </h1>
+
+                                <div class="thumb3">
+                                    <div class="thumbnail clearfix">
+                                        <figure class="img-polaroid"><img src="images/aa12.png" alt=""></figure>
+                                        <!--<div class="caption">-->
+                                        <!--<h4>-->
+                                        <!--Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit.-->
+                                        <!--</h4>-->
+                                        <!--<p>-->
+                                        <!--amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetuer adipiscing elit. Nunc suscipit. Suspendisse enim arcu, convallis non, cursus sed, dignissim et, est. Aenean semper aliquet libero. In ante velit, cursus ut, ultrices vitae, tempor ut, risus. Duis pulvinar. Vestibulum vel pede at sapien sodales mattis. Quisque pretium, lacus nec iaculis vehicula, arcu libero consectetuer massa, auctor aliquet mauris ligula id ipsum. Vestibulum pede.-->
+                                        <!--</p>-->
+                                        <!--</div>-->
+                                    </div>
+                                </div>
+
+                                <div class="line1"></div>
+
+                                <h2>Description</h2>
+
+                                <div class="row">
+                                    <div style=" width:100%; float:left; margin-right:20px; ">
+                                        <div class="span8">
+
+                                            <h5 class="home">
+                                                Disc Type Self Cleaning Filters  </h5>
+
+
+                                            <div>
+
+
+                                                <div>
+
+                                                    <ul class="listingsss">
+                                                        <li>Use thin,color-coded discs of varied micron sizes.</li>
+                                                        <li>The discs are grooved on both sides,in opposite direction,creating a series of crossing points that trap the particles,thereby creating a depth filtration element.</li>
+                                                        <li>Each filter assembly in a multi-unit system is cleaned individually,allowing the other filter to contitnue,operating during the backwash process.</li>
+
+
+                                                    </ul><br />
+
+                                                    <h5 class="home"> Motorised Self cleaning filters </h5>
+
+                                                    <p class="ptext" style="text-align:justify;">The filter system consists of a cylindrical,cleanable filter which rotates against the stationery cleaning knife causing particles larger than the opening to be retained and eventually scraped off the element.Continuous, opretor independent opration.No need for disposable filter cartridges,thereby reducing the cost of replacement elements,changes-out labor,and downtime.No operator exposure,hence no health hazzards unique welded wedge wire type mesh,strong,rugged and durable.Higher percentage of open area,provides significantly higher flow throughput and lower pressure drops.</p>
+
+                                                </div><br />
+                                                <div>
+                                                    <h5 class="home">Vaccum Suction Type Self Cleaning Filter</h5>
+                                                    <ul class="listingsss">
+                                                        <li>Unique suction scanning technology with self-cleaning screen and fine micron rating down to 10 micron.</li>
+                                                        <li>Efficient cleaning System at fine micron rating with unique spring Loaded Nozzles technology.Minimal footprint.</li>
+                                                        <li>Continuous filtration during cleaning(process not interruptd).</li>
+                                                        <li>less than 1% of flow used for self-cleaning process world-wide proven technology</li>
+
+                                                    </ul>
+                                                </div><br />
+
+
+                                                <div><h5 class="home">Application :</h5>
+
+                                                    <ul class="listingsss"  style="width:50%;float:left;">
+                                                        <li class="ptext">Adhesives</li>
+                                                        <li class="ptext">Chemicals</li>
+                                                        <li class="ptext">Chocolate Cooling lines</li>
+                                                        <li class="ptext"> HVAC Water</li>
+                                                        <li class="ptext">lnks</li>
+                                                        <li class="ptext">Lacquers</li>
+                                                        <li class="ptext">Paints</li>
+                                                        <li class="ptext">Stains</li><br />
+                                                    </ul>
+                                                    <ul class="home" style="width:50%;float:left;">
+                                                        <li class="ptext">Varnishes</li>
+                                                        <li class="ptext">petrochemicals</li>
+                                                        <li class="ptext">Printing</li>
+                                                        <li class="ptext">Recycling Water</li>
+                                                        <li class="ptext">Recycling Water</li>
+                                                        <li class="ptext">River and Sea Water</li>
+                                                        <li class="ptext">Wash Water</li>
+                                                        <li class="ptext"> Cooling Towers</li><br />
+                                                    </ul><br />
+
+
+
+                                                </div><br />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="bot clearfix">
+                            <div class="bot1">
+                                <div class="menu_bot">
+                                    <ul id="menu_bot" class="clearfix">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <!--<li><a href="company.html">Company </a></li>				-->
+                                        <li class="sub-menu sub-menu-1"><a href="javascript:;">Products<em></em></a>
+                                            <ul>
+                                                <li><a href="machine_products.html">Filteration & purification</a></li>
+                                                <li><a href="agro_products.html">Agro Products</a></li>
+                                                <li><a href="leather_cloth.html">Leather & Clothing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="company.html">Company </a></li>
+                                        <li><a href="contact_us.html">Contacts</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bot2 clearfix">
+
+                            </div>
+                        </div>
+                        <div class="copyright">Copyright © <script type="text/javascript">document.write(new Date().getFullYear())</script>. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
